@@ -10,6 +10,8 @@ const app = express()
 app.use(cors())
 PORT = 8000
 
+
+//
 // MongoDB Connection 
 mongoose.connect(process.env.MONGO_URL,{useNewUrlParser : true}, {useUnifiedTopology : true})
 .then(()=>{
